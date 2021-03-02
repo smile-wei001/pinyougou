@@ -1,0 +1,362 @@
+/* 详情页样式文件 */
+
+.de_container {
+    margin-top: 20px;
+}
+
+.crumb_wrap {
+    height: 25px;
+}
+
+.crumb_wrap a {
+    margin: 0 10px;
+}
+
+.preview_wrap {
+    width: 402px;
+    height: 590px;
+}
+
+.preview_img {
+    height: 400px;
+    border: 1px solid #ccc
+}
+
+.preview_list {
+    position: relative;
+    height: 60px;
+    margin-top: 60px;
+}
+
+.list-item {
+    width: 320px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.list-item li {
+    float: left;
+    width: 56px;
+    height: 56px;
+    border: 2px solid transparent;
+    margin: 0 2px;
+}
+
+.list-item li.current {
+    border-color: red;
+}
+
+.arrow_prev,
+.arrow_next {
+    position: absolute;
+    top: 15px;
+    width: 22px;
+    height: 32px;
+}
+
+.arrow_prev {
+    left: 0;
+    background: url(../img/arrow-prev.png) no-repeat;
+}
+
+.arrow_next {
+    right: 0;
+    background: url(../img/arrow-next.png) no-repeat;
+}
+
+.itemInfo_wrap {
+    width: 718px;
+}
+
+.sku_name {
+    font-size: 16px;
+    color: #333333;
+}
+
+.news {
+    font-size: 12px;
+    color: #e12228;
+    margin: 10px 0;
+}
+
+.summary_price,
+.summary_promotion {
+    position: relative;
+    padding: 10px 0;
+    background-color: #fee9eb;
+}
+
+.summary dl {
+    /* 清除浮动 */
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.summary dt,
+.summary dd {
+    float: left;
+}
+
+.summary dt {
+    width: 60px;
+    padding-left: 10px;
+    line-height: 36px;
+}
+
+.price {
+    font-size: 24px;
+    color: #e12228;
+}
+
+.summary_price a {
+    font-size: 12px;
+    color: #c81623;
+}
+
+.remark {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.summary_promotion {
+    padding-top: 0;
+}
+
+.summary_promotion em {
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+}
+
+.summary_promotion dd {
+    width: 450px;
+    line-height: 36px;
+}
+
+.summary_support dd {
+    line-height: 36px;
+}
+
+.choose_color a {
+    display: inline-block;
+    font-size: 12px;
+    width: 80px;
+    height: 41px;
+    background-color: #f7f7f7;
+    border: 1px solid #ededed;
+    text-align: center;
+    line-height: 41px;
+}
+
+.choose_color dt {
+    line-height: 43px;
+}
+
+.summary a.current {
+    border-color: #c81623;
+}
+
+.choose_version a,
+.choose_type a {
+    display: inline-block;
+    height: 32px;
+    padding: 0 12px;
+    border: 1px solid #ededed;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 32px;
+}
+
+.choose_btns {
+    margin-top: 20px;
+}
+
+.choose_amount {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 46px;
+    background-color: pink;
+}
+
+.choose_amount input {
+    width: 33px;
+    height: 44px;
+    border: 1px solid #ccc;
+    line-height: 33px;
+    text-align: center;
+}
+
+.choose_amount .add,
+.choose_amount .reduce {
+    position: absolute;
+    width: 15px;
+    height: 22px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    line-height: 22px;
+    text-align: center;
+    right: 0;
+}
+
+.add {
+    top: 0;
+}
+
+.reduce {
+    bottom: 0;
+    cursor: not-allowed;
+}
+
+.addcar {
+    float: left;
+    width: 142px;
+    height: 46px;
+    background-color: #c81623;
+    line-height: 46px;
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* 产品细节模块 */
+
+.aside {
+    width: 208px;
+    border: 1px solid #ccc;
+}
+
+.tab_list {
+    overflow: hidden;
+    height: 34px;
+}
+
+
+/* 把背景颜色和边框都给了li */
+
+.tab_list li {
+    float: left;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+}
+
+
+/* 鼠标点击 变化背景色，去掉下边框，文字变颜色 */
+
+.tab_list .current {
+    background-color: #fff;
+    border-bottom: 0;
+    color: red;
+}
+
+.first_tab {
+    width: 104px;
+}
+
+.second_tab {
+    border-left: 1px solid #ccc;
+    width: 103px;
+}
+
+.tab_con {
+    padding: 0 10px;
+}
+
+.item {
+    overflow: hidden;
+}
+
+.item li {
+    float: left;
+    width: 84px;
+    height: 23px;
+    padding: 7px 0 7px 8px;
+    border-bottom: 2px dotted #ccc;
+    font-size: 12px;
+    color: #494949;
+    line-height: 23px;
+}
+
+.item_icon {
+    border-bottom: 1px solid #ccc;
+}
+
+.item_icon li h5 {
+    /* 强制一行显示 */
+    white-space: nowrap;
+    overflow: hidden;
+    /* 超出文字省略号显示 */
+    text-overflow: ellipsis;
+    font-weight: 400;
+}
+
+.aside_price {
+    font-weight: 700;
+    color: #333333;
+    margin: 10px 0;
+}
+
+.as_addcar {
+    display: block;
+    width: 88px;
+    height: 26px;
+    border: 1px solid#ccc;
+    background-color: #f7f7f7;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 26px;
+}
+
+.detail {
+    width: 978px;
+}
+
+.detail_tab_list {
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.detail_tab_list li {
+    /* 浮动的盒子和内容一样大 */
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.detail_tab_list .current {
+    background-color: #c81623;
+    color: #fff;
+}
+
+.item_info {
+    padding: 20px 0 0 20px;
+}
+
+.item_info li {
+    line-height: 22px;
+}
+
+.more {
+    float: right;
+    font-weight: 700;
+    font-family: 'icomoon';
+}
+
+.product_detail {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,392 @@
+/*公共样式*/
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/*声明字体图标，注意路径（先返回上一路径，才可以找到fonts文件夹）*/
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7kkyc2');
+    src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?7kkyc2') format('truetype'), url('../fonts/icomoon.woff?7kkyc2') format('woff'), url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*引用字体图标*/
+
+.fr .icomoon {
+    font-family: 'icomoon';
+    font-size: 16px;
+    /*该图标垂直居中显得不好看，让图标往上走一些，行高<高，文字居上一些，就可以了*/
+    line-height: 26px;
+}
+
+
+/*版心*/
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*快捷导航栏开始*/
+
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
+
+/*该颜色在好多地方都会用到，所以单独写一个样式*/
+
+.style-red {
+    color: #c81623;
+}
+
+
+/*因为左边，右边的li据需要浮动，所以给父盒子里面的li 建立浮动*/
+
+.shortcut li {
+    float: left;
+}
+
+.spacer {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    /*给小竖线调整位置*/
+    margin: 9px 12px 0;
+}
+
+
+/*快捷导航栏结束*/
+
+
+/*header开始*/
+
+.header {
+    position: relative;
+    height: 114px;
+}
+
+
+/*logo 使用背景图片，不允许使用插入图片*/
+
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 175px;
+    height: 56px;
+}
+
+
+/*背景图片给logo里面的链接，背景图片必须有大小*/
+
+.logo a {
+    display: block;
+    width: 175px;
+    height: 56px;
+    font-size: 0;
+    background: url(../img/logo.png) no-repeat;
+}
+
+.search {
+    position: absolute;
+    left: 348px;
+    top: 25px;
+}
+
+.search .text {
+    float: left;
+    width: 445px;
+    height: 33px;
+    border: 2px solid #b1191a;
+    padding-left: 10px;
+    color: #ccc;
+}
+
+.search .btn {
+    /*去除表单之间的空白空隙，添加浮动*/
+    float: left;
+    width: 82px;
+    height: 37px;
+    background-color: #b1191a;
+    /*去掉自带的边框*/
+    border: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.hotwords {
+    position: absolute;
+    left: 348px;
+    top: 65px;
+}
+
+
+/*a是行内元素，可以给左右的内外边距，只要不给上下就可以*/
+
+.hotwords a {
+    margin: 0 10px;
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 64px;
+    width: 138px;
+    height: 34px;
+    /*垂直居中*/
+    line-height: 34px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    /*居中对齐*/
+    text-align: center;
+}
+
+.shopcar .car {
+    font-family: 'icomoon';
+    /*更改小车的颜色*/
+    color: #da5555;
+}
+
+.shopcar .arrow {
+    font-family: 'icomoon';
+    margin-right: 5px;
+}
+
+.shopcar .count {
+    /*有定位，默认转为行内块*/
+    position: absolute;
+    top: -5px;
+    /*应该是左侧对齐，文字才可以往右走*/
+    left: 100px;
+    padding: 0 3px;
+    background-color: #e60012;
+    height: 14px;
+    /*因为继承了shopcar的行高，所以里面的内容没有居中对齐，故重新设置行高*/
+    line-height: 14px;
+    color: #fff;
+    /*border-radius 左上角 右上角 右下角 左下角*/
+    border-radius: 10px 10px 10px 0;
+}
+
+
+/*nav导航栏开始*/
+
+.nav {
+    height: 45px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.dropdown {
+    width: 210px;
+    height: 45px;
+    background-color: pink;
+}
+
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+}
+
+.dropdown .dd {
+    height: 465px;
+    background-color: #c81623;
+    margin-top: 2px;
+}
+
+
+/*距离左面有1px,所以给li外边距*/
+
+.menu_item {
+    height: 31px;
+    line-height: 31px;
+    margin-left: 1px;
+    padding: 0 10px;
+    color: #fff;
+    transition: all .5s;
+}
+
+
+/*鼠标过去，整个li背景变为白色*/
+
+.menu_item:hover {
+    padding-left: 20px;
+    background-color: #fff;
+}
+
+.menu_item a {
+    font-size: 12px;
+    color: #fff;
+}
+
+.menu_item i {
+    float: right;
+    font-family: 'icomoon';
+    /*字体图标的大小以及颜色*/
+    font-size: 12px;
+    color: #fff;
+}
+
+
+/*鼠标经过li，里面的a变颜色*/
+
+.menu_item:hover a {
+    color: #c81623;
+}
+
+.navitems {
+    margin-left: 10px;
+}
+
+.navitems li {
+    /*需要一行显示，进行浮动*/
+    float: left;
+}
+
+.navitems li a {
+    /*文字垂直居中，需要给高度；字数不同，不能给宽度；整个例里面都是a的范围*/
+    /*a是行内元素，没有大小，先进行转换*/
+    display: block;
+    height: 45px;
+    padding: 0 25px;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+
+/*nav导航栏结束*/
+
+
+/*footer开始*/
+
+.footer {
+    height: 386px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+.mod_service {
+    height: 79px;
+    border-bottom: 1px solid #ededed;
+}
+
+.mod_service li {
+    float: left;
+    width: 240px;
+}
+
+.mod_service_icon {
+    /*浮动的盒子 可以直接给大小 不需要转换*/
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin-left: 35px;
+    background: url(../img/icons.png) no-repeat;
+}
+
+.mod_service_zheng {
+    background-position: -253px -3px;
+}
+
+.mod_service_tit {
+    float: left;
+    margin-left: 5px;
+}
+
+.mod_service_tit h5 {
+    margin: 5px 0;
+}
+
+.mod_service_kuai {
+    /*浮动的盒子 可以直接给大小 不需要转换*/
+    background-position: -255px -54px;
+}
+
+.mod_service_wu {
+    background-position: -255px -105px;
+}
+
+.mod_service_te {
+    background-position: -256px -156px;
+}
+
+.mod_service_bang {
+    background-position: -256px -207px;
+}
+
+.mod_help {
+    height: 187px;
+    border-bottom: 1px solid #ededed;
+}
+
+.mod_help_item {
+    float: left;
+    width: 150px;
+    padding: 20px 0 0 50px;
+}
+
+.mod_help_item dt {
+    height: 25px;
+    font-size: 16px;
+    padding-bottom: 3px;
+}
+
+.mod_help_item dd {
+    height: 22px;
+}
+
+.mod_help_app dt,
+.mod_help_app p {
+    padding-left: 15px;
+}
+
+.mod_help_app img {
+    margin-top: 10px 0;
+}
+
+.mod_copyright {
+    text-align: center;
+}
+
+.mod_copyright_links {
+    margin: 12px 0 15px 115px;
+    height: 16px;
+}
+
+.mod_copyright_links li {
+    float: left;
+}
+
+.mod_copyright_links .spacer {
+    width: 1px;
+    height: 10px;
+    background-color: #666;
+    /*给小竖线调整位置*/
+    margin: 4px 12px;
+}
+
+.mod_copyright_info {
+    margin-top: 13px;
+    height: 18px;
+}
+
+
+/*footer结束*/

@@ -1,0 +1,381 @@
+/*这个文件里面放的是 首页的样式*/
+
+.main {
+    width: 980px;
+    height: 455px;
+    /*距离左面的距离*/
+    margin: 10px 0 0 219px;
+}
+
+.focus {
+    position: relative;
+    width: 722px;
+    height: 455px;
+    background-color: purple;
+}
+
+
+/*浮动的元素以及添加了绝对定位的盒子可以直接给大小*/
+
+.arrow-l,
+.arrow-r {
+    position: absolute;
+    /*盒子需要居中对齐，走父盒子的50%，自身的-50%*/
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    /*背景黑色半透明*/
+    background: rgb(0, 0, 0, .3);
+    /*块里面文字垂直、水平居中*/
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    /*字体图标*/
+    font-family: 'icomoon';
+    font-size: 16px;
+}
+
+.arrow-l {
+    border-radius: 0 12px 12px 0;
+}
+
+.arrow-r {
+    right: 0;
+    border-radius: 12px 0 0 12px;
+}
+
+.circle {
+    position: absolute;
+    bottom: 18px;
+    left: 50px;
+}
+
+.current {
+    background-color: #fff;
+}
+
+
+/*添加小圆圈的样式*/
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    /*background-color: #fff;*/
+    border: 1px solid rgba(255, 255, 255, .5);
+    margin: 0 3px;
+    border-radius: 50%;
+    /*鼠标移动上去变为小手*/
+    cursor: pointer;
+}
+
+.newsflash {
+    width: 250px;
+    height: 455px;
+}
+
+.news {
+    height: 163px;
+    border: 1px solid #ccc;
+}
+
+.news_hd {
+    height: 32px;
+    /*dotter点线 doshed虚线*/
+    border-bottom: 1px dotted #ccc;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.news_hd a {
+    float: right;
+    font-size: 12px;
+    font-family: 'icomoon';
+}
+
+.news_bd {
+    padding: 10px 0 0 15px;
+}
+
+
+/*可以给li一个高度，让文字在左上角对齐*/
+
+.news_bd li {
+    height: 23px;
+}
+
+.lifeservice {
+    height: 210px;
+    border: 1px solid #ccc;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice li {
+    position: relative;
+    float: left;
+    width: 62px;
+    height: 70px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+.lifeservice li a {
+    display: block;
+    /* 解决i 引起的外边框塌陷合并的问题 */
+    overflow: hidden;
+    height: 100%;
+}
+
+.lifeservice li p {
+    text-align: center;
+}
+
+.hot {
+    width: 12px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../img/jian.jpg)no-repeat;
+}
+
+
+/* i为行元素，没有宽高，所以将其转化为块级元素 */
+
+.service_ico {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons.png) no-repeat;
+    margin: 10px auto;
+}
+
+.service_ico_huafei {
+    background-position: -17px -16px;
+}
+
+.service_ico_feiji {
+    background-position: -78px -16px;
+}
+
+.service_ico_dianyingpiao {
+    background-position: -140px -16px;
+}
+
+.service_ico_youxi {
+    background-position: -204px -16px;
+}
+
+.service_ico_caipiao {
+    background-position: -17px -86px;
+}
+
+.service_ico_jiayouka {
+    background-position: -78px -86px;
+}
+
+.service_ico_jiudian {
+    background-position: -140px -86px;
+}
+
+.service_ico_huochepiao {
+    background-position: -204px -86px;
+}
+
+.service_ico_zhongchou {
+    background-position: -17px -158px;
+}
+
+.service_ico_licai {
+    background-position: -78px -158px;
+}
+
+.service_ico_lipinka {
+    background-position: -140px -158px;
+}
+
+.service_ico_baitiao {
+    background-position: -204px -158px;
+}
+
+.bargain {
+    height: 75px;
+    margin-top: 2px;
+    background: url(../img/男装.jpg) no-repeat;
+}
+
+
+/* 推荐模块 */
+
+.recommend {
+    height: 171px;
+    margin-top: 13px;
+}
+
+.recom-hd {
+    height: 171px;
+    width: 200px;
+    background-color: #5c5251;
+    text-align: center;
+}
+
+.recom-hd img {
+    margin: 30px 0 10px 0;
+}
+
+.recom-hd h3 {
+    font-size: 18px;
+    color: #fff;
+    /* 不加粗 */
+    font-weight: 400;
+}
+
+.recom-bd {
+    height: 171px;
+    width: 1000px;
+    background-color: #ebebeb;
+}
+
+
+/* 里面有一个盒子，高度与父盒子不同，因为有一个有边框 */
+
+.recom-bd li {
+    float: left;
+    height: 145px;
+    width: 249px;
+    border-right: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.recom-bd .last {
+    border-right: 0;
+}
+
+
+/* 推荐模块结束 */
+
+
+/* 楼层区开始 */
+
+.box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+    margin-top: 25px;
+}
+
+
+/* 因为要一排放两个，所以li应该有大小 */
+
+.box-bd .tab-con-list li {
+    width: 86px;
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.tab-con-list {
+    /* 父盒子没有给高度，还利用浮动了，需要清除浮动
+     */
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 18px;
+}
+
+.tab-list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab-list li {
+    float: left;
+}
+
+.tab-list li a {
+    margin: 0 15px;
+}
+
+.box-bd {
+    height: 360px;
+}
+
+.box-bd li {
+    overflow: hidden;
+}
+
+.box-bd img {
+    transition: all .5s;
+}
+
+
+/* 鼠标经过图片，向右移动 */
+
+.box-bd img:hover {
+    margin-left: 8px;
+}
+
+.w209 {
+    width: 209px;
+    background-color: #f9f9f9;
+}
+
+.w329 {
+    width: 329px;
+}
+
+.w219 {
+    width: 219px;
+    border-right: 1px solid #ccc;
+}
+
+.box-bd li {
+    float: left;
+    height: 360px;
+}
+
+.tab-con-item {
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* 楼层区结束 */
+
+
+/* 电梯导航 */
+
+.fixedtool {
+    position: fixed;
+    top: 100px;
+    /* 要贴着版型,先走页面的50%，再走版型的50%+自身宽度 */
+    left: 50%;
+    margin-left: -676px;
+    width: 66px;
+    background-color: #fff;
+}
+
+.fixedtool li {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.fixedtool .current {
+    background-color: #c81623;
+    color: #fff;
+}
