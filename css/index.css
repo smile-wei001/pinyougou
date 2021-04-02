@@ -9,9 +9,22 @@
 
 .focus {
     position: relative;
-    width: 722px;
+    width: 721px;
     height: 455px;
     background-color: purple;
+    overflow: hidden;
+}
+
+.focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* ul宽度是 父亲focus 的4倍 */
+    width: 500%;
+}
+
+.focus ul li {
+    float: left;
 }
 
 
@@ -19,6 +32,7 @@
 
 .arrow-l,
 .arrow-r {
+    display: none;
     position: absolute;
     /*盒子需要居中对齐，走父盒子的50%，自身的-50%*/
     top: 50%;
@@ -34,6 +48,7 @@
     /*字体图标*/
     font-family: 'icomoon';
     font-size: 16px;
+    z-index: 9999;
 }
 
 .arrow-l {
@@ -364,6 +379,7 @@
     margin-left: -676px;
     width: 66px;
     background-color: #fff;
+    display: none;
 }
 
 .fixedtool li {

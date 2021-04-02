@@ -17,6 +17,10 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <!--引入favicon.ico-->
     <link rel="shortcut icon" href="pin.ico" type="image/x-icon" />
+    <!-- 引入js 文件 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -107,7 +111,7 @@
         <!-- 热词 hotwords结束 -->
         <!-- 购物车 shopcar开始 -->
         <div class="shopcar">
-            <i class="car"></i> 我的购物车
+            <a href="car.html"><i class="car"></i> 我的购物车</a>
             <i class="arrow"></i>
             <!-- 统计位置用绝对定位来操作，绝对不能给宽度，给一个高度，左下角为直角 -->
             <i class="count">
@@ -226,23 +230,29 @@
             <div class="focus fl">
                 <!-- 图片不仅一张，是很多张，应该ul li a img -->
                 <!-- 该图片中应该还有左右按钮，以及下面的小圆圈点 -->
-                <a href="#" class="arrow-l"></a>
-                <a href="#" class="arrow-r"></a>
+                <!-- 左侧按钮 -->
+                <a href="javascript:;" class="arrow-l"></a>
+                <!-- 右侧按钮 -->
+                <a href="javascript:;" class="arrow-r"></a>
+                <!-- 核心滚动区 -->
                 <ul>
                     <li>
                         <a href="#"><img src="upload/大牌PK.png" alt=""></a>
                     </li>
+                    <li>
+                        <a href="#"><img src="upload/focus1.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="upload/focus2.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="upload/focus3.jpg" alt=""></a>
+                    </li>
+
                 </ul>
-                <!-- 小圆圈点 -->
+                <!-- 动态生成小圆圈点 的 个数 -->
                 <ol class="circle">
-                    <li></li>
-                    <li class="current"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+
                 </ol>
             </div>
             <div class="newsflash fr">
@@ -458,9 +468,151 @@
             </div>
         </div>
         <!-- 手机通讯 -->
-        <div class="jiadian w">
+        <div class="shouji w">
             <div class="box-hd">
                 <h3>手机通讯</h3>
+                <div class="tab-list">
+                    <ul>
+                        <li><a href="#" class="style-red">热门</a>|</li>
+                        <li><a href="#">大家电</a>|</li>
+                        <li><a href="#">生活电器</a>|</li>
+                        <li><a href="#">厨房电器</a>|</li>
+                        <li><a href="#">个护健康</a>|</li>
+                        <li><a href="#">应季电器</a>|</li>
+                        <li><a href="#">空气\净水</a>|</li>
+                        <li><a href="#">新奇特</a>|</li>
+                        <li><a href="#">高端电器</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-bd">
+                <!-- tab-con与热门对应 -->
+                <ul class="tab-con">
+                    <!-- 5个小li宽度各不相同，但是高度与父亲相同 209 329 219+1 -->
+                    <li class="w209">
+                        <ul class="tab-con-list">
+                            <li><a href="#">节能补贴</a></li>
+                            <li><a href="#">4k电视</a></li>
+                            <li><a href="#">空气净化器</a></li>
+                            <li><a href="#">节能补贴</a></li>
+                            <li><a href="#">节能补贴</a></li>
+                            <li><a href="#">节能补贴</a></li>
+                        </ul>
+                        <img src="upload\floor-1-1.png" alt="">
+                    </li>
+                    <!-- 本应为轮播图效果，ul li a img  -->
+                    <li class="w329">
+                        <img src="upload\pic01.jpg" alt="">
+                    </li>
+                    <li class="w219">
+                        <div class="tab-con-item">
+                            <a href="#">
+                                <img src="upload\pic1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="tab-con-item">
+                            <a href="#">
+                                <img src="upload\pic2.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="w219">
+                        <div class="tab-con-item">
+                            <a href="#">
+                                <img src="upload\pic3.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="w219">
+                        <div class="tab-con-item">
+                            <a href="#">
+                                <img src="upload\pic4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="tab-con-item">
+                            <a href="#">
+                                <img src="upload\pic5.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 电脑办公 -->
+        <div class="diannao w">
+            <div class="box-hd">
+                <h3>电脑办公</h3>
+                <div class="tab-list">
+                    <ul>
+                        <li><a href="#" class="style-red">热门</a>|</li>
+                        <li><a href="#">大家电</a>|</li>
+                        <li><a href="#">生活电器</a>|</li>
+                        <li><a href="#">厨房电器</a>|</li>
+                        <li><a href="#">个护健康</a>|</li>
+                        <li><a href="#">应季电器</a>|</li>
+                        <li><a href="#">空气\净水</a>|</li>
+                        <li><a href="#">新奇特</a>|</li>
+                        <li><a href="#">高端电器</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-bd">
+                <!-- tab-con与热门对应 -->
+                <ul class="tab-con">
+                    <!-- 5个小li宽度各不相同，但是高度与父亲相同 209 329 219+1 -->
+                    <li class="w209">
+                        <ul class="tab-con-list">
+                            <li><a href="#">节能补贴</a></li>
+                            <li><a href="#">4k电视</a></li>
+                            <li><a href="#">空气净化器</a></li>
+                            <li><a href="#">节能补贴</a></li>
+                            <li><a href="#">节能补贴</a></li>
+                            <li><a href="#">节能补贴</a></li>
+                        </ul>
+                        <img src="upload\floor-1-1.png" alt="">
+                    </li>
+                    <!-- 本应为轮播图效果，ul li a img  -->
+                    <li class="w329">
+                        <img src="upload\pic01.jpg" alt="">
+                    </li>
+                    <li class="w219">
+                        <div class="tab-con-item">
+                            <a href="#">
+                                <img src="upload\pic1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="tab-con-item">
+                            <a href="#">
+                                <img src="upload\pic2.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="w219">
+                        <div class="tab-con-item">
+                            <a href="#">
+                                <img src="upload\pic3.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="w219">
+                        <div class="tab-con-item">
+                            <a href="#">
+                                <img src="upload\pic4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="tab-con-item">
+                            <a href="#">
+                                <img src="upload\pic5.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 精品家居 -->
+        <div class="jiaju w">
+            <div class="box-hd">
+                <h3>精品家居</h3>
                 <div class="tab-list">
                     <ul>
                         <li><a href="#" class="style-red">热门</a>|</li>
@@ -676,11 +828,8 @@
         <ul>
             <li class="current">家用电器</li>
             <li>手机通讯</li>
-            <li>家用电器</li>
-            <li>家用电器</li>
-            <li>家用电器</li>
-            <li>家用电器</li>
-            <li>家用电器</li>
+            <li>电脑办公</li>
+            <li>精品家居</li>
         </ul>
     </div>
 </body>

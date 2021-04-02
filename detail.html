@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="css/detail.css">
     <!--引入favicon.ico-->
     <link rel="shortcut icon" href="pin.ico" type="image/x-icon" />
+    <!-- 引入外部js文件 -->
+    <script src="js/detail.js"></script>
 </head>
 <!--快捷导航栏开始-->
 <div class="shortcut">
@@ -233,6 +235,12 @@
             <!-- 大图 -->
             <div class="preview_img">
                 <img src="upload/s3.png" alt="">
+                <!-- 遮挡层 -->
+                <div class="mask"></div>
+                <!-- 大盒子 -->
+                <div class="big">
+                    <img src="upload/big.jpg" alt="" class="bigImg">
+                </div>
             </div>
             <!-- 小图 -->
             <div class="preview_list">
@@ -388,6 +396,15 @@
             </div>
             <div class="detail_tab_con">
                 <!-- 应该为5个，与上方互相对于 -->
+                <!-- 商品介绍 -->
+                <div class="detail_tab_con_item" style="display: none;">
+                    <ul class="item_info">
+                        <li>该商品销售火爆 </li>
+                        <li>多种规格任君选择</li>
+                    </ul>
+
+                </div>
+                <!-- 规格与包装 -->
                 <div class="detail_tab_con_item">
                     <ul class="item_info">
                         <li>分辨率：1920*1080(FHD) </li>
@@ -405,6 +422,30 @@
                     <img src="upload/detail_img1.jpg" alt="">
                     <img src="upload/detail_img2.jpg" alt="">
                     <img src="upload/detail_img3.jpg" alt="">
+                </div>
+                <!-- 售后保障 -->
+                <div class="detail_tab_con_item" style="display: none;">
+                    <ul class="item_info">
+                        <li>7天无理由换货 </li>
+                        <li>各个城市均有售后维修地点</li>
+                    </ul>
+
+                </div>
+                <!-- 商品评价（50000） -->
+                <div class="detail_tab_con_item" style="display: none;">
+                    <ul class="item_info">
+                        <li>商品评价（50000） </li>
+                        <li>商品评价（50000）</li>
+                    </ul>
+
+                </div>
+                <!-- 手机社区 -->
+                <div class="detail_tab_con_item" style="display: none;">
+                    <ul class="item_info">
+                        <li>手机社区 </li>
+                        <li>手机社区</li>
+                    </ul>
+
                 </div>
             </div>
 

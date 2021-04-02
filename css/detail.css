@@ -18,8 +18,42 @@
 }
 
 .preview_img {
+    position: relative;
     height: 400px;
     border: 1px solid #ccc
+}
+
+.mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 300px;
+    background-color: #fede4f;
+    /* 半透明 */
+    opacity: .5;
+    border: 1px solid #ccc;
+    cursor: move;
+}
+
+.big {
+    display: none;
+    position: absolute;
+    left: 410px;
+    top: 0;
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    z-index: 999;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.bigImg {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .preview_list {
