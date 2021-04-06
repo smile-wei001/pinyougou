@@ -124,8 +124,7 @@ window.addEventListener('load', function() {
     }, 2000);
 
 
-})
-$(function() {
+
     var flag;
     // 电梯导航
     //1、显示或者隐藏电梯导航

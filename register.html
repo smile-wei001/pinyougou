@@ -9,8 +9,10 @@
     <title>注册页面</title>
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <!--注册页面样式-->
-    <link rel="stylesheet" type="text/css" href="css/register.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
+
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <script src="js/reg.js"></script>
 
 </head>
 
@@ -26,61 +28,68 @@
         </div>
         <!-- header完成 -->
         <!-- registerarea -->
-        <div class="registerarea w">
-            <h3>注册新用户
-                <em>我有账号，去<a href="#">登录</a></em>
+        <div class="registerarea">
+            <h3>
+                注册新用户
+                <em>
+					我有账号，去<a href="login.html">登陆</a>
+				</em>
             </h3>
             <div class="reg_form">
 
-                <form action="">
+                <form action="demo.php">
                     <ul>
                         <li>
-                            <!-- label for id 点击 手机号 三个字 就可以直接跳转到输入框中 -->
-                            <label for="tel">手机号：</label>
-                            <input type="text" name="" id="tel" class="inp">
-                            <span class="error">
-                                <i class="error_icon"></i>
-                                手机号码格式不正确，请重新输入
-                            </span>
+                            <label for="tel">手机号:</label>
+                            <input type="text" class="inp" id="tel">
+                            <span class="">		
+						
+						</span>
                         </li>
                         <li>
-                            <label for="">短信验证码：</label>
-                            <input type="text" name="" id="" class="inp">
-
+                            <label for="">QQ邮箱:</label>
+                            <input type="text" class="inp" id="qq">
+                            <span></span>
                         </li>
                         <li>
-                            <label for="">登录密码：</label>
-                            <input type="text" name="" id="" class="inp">
-                            <span class="success">
-                                <i class="success_icon"></i>
-                                恭喜你输入正确
+                            <label for="">昵称:</label>
+                            <input type="text" class="inp" id="nc">
+                            <span></span>
+                        </li>
+                        <li>
+                            <label for="">短信验证码:</label>
+                            <input type="text" class="inp" id="msg">
+                            <span></span>
+                        </li>
+                        <li>
+                            <label for="">登陆密码:</label>
+                            <input type="text" class="inp" id="pwd">
+                            <span>
                             </span>
-
                         </li>
                         <li class="safe">
-                            安全强度
+                            安全程度
                             <em class="ruo">弱</em>
                             <em class="zhong">中</em>
                             <em class="qiang">强</em>
-
                         </li>
+
                         <li>
-                            <label for="">确认密码：</label>
-                            <input type="text" name="" id="" class="inp">
-                            <span class="success">
-                                <i class="success_icon"></i>
-                                恭喜你输入正确
-                            </span>
+                            <label for="">确认密码:</label>
+                            <input type="text" class="inp" id="surepwd">
+                            <span></span>
                         </li>
                         <li class="agree">
-                            <input type="checkbox" name="" id=""> 同意协议并注册
-                            <a href="#">《用户协议》</a>
+
+                            <input type="checkbox">同意协议并注册
+                            <a href="#">《知果果用户协议》</a>
                         </li>
                         <li>
                             <input type="submit" value="完成注册" class="over">
                         </li>
                     </ul>
                 </form>
+
             </div>
         </div>
         <div class="footer">
